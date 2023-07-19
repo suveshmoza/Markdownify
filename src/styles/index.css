@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	padding: 5px;
+}
+
+.row {
+	width: 100%;
+	height: 91vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 8px;
+}
+.input-text-area {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	box-sizing: border-box; /* Ensure that padding and borders don't affect the overall size */
+	resize: none;
+	padding: 10px;
+}
+
+.markdown-nav {
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2px 20px;
+}
+
+.markdown-nav-logo {
+	font-size: 2rem;
+	font-family: 'Dancing Script', cursive;
+}
+
+.markdown-nav-links {
+	display: flex;
+	list-style-type: none;
+	font-weight: normal;
+	align-items: center;
+	padding-top: 5px;
+}

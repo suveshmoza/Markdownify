@@ -1,5 +1,12 @@
+import { Layout, Nav } from './components';
+
 const App = () => {
-	return <div>Hello There</div>;
+	return (
+		<div>
+			<Nav />
+			<Layout />
+		</div>
+	);
 };
 
 export default App;
