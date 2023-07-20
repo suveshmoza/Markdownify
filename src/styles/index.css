@@ -25,6 +25,19 @@
 	padding: 10px;
 }
 
+.output-area {
+	border: 1px solid black;
+	padding: 10px;
+	min-width: 90%;
+	border-radius: 10px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.output-area:active {
+	outline: 1px solid black;
+}
+
 .markdown-nav {
 	height: 40px;
 	display: flex;
