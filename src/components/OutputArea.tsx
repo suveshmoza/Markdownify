@@ -1,13 +1,10 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../store';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 const OutputArea = () => {
 	const value = useSelector((state: RootState) => state.markdown.value);
-	return (
-		<div className="output-area">
-			{value.length === 0 ? 'Hello There' : value}
-		</div>
-	);
+	return <ReactMarkdown className="output-area" children={value} />;
 };
 
 export default OutputArea;

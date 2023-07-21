@@ -32,10 +32,7 @@
 	border-radius: 10px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-}
-
-.output-area:active {
-	outline: 1px solid black;
+	list-style-position: inside;
 }
 
 .markdown-nav {
