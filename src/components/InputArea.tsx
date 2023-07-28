@@ -11,12 +11,19 @@ const InputArea = () => {
 	};
 
 	return (
-		<textarea
-			className="input-text-area"
-			placeholder="Hello There!"
-			value={value}
-			onChange={handleChange}
-		/>
+		<div className="input-area-container">
+			<div className="navbar">
+				<button className="navbar-button">
+					Download <i className="fa-brands fa-markdown fa-xl"></i>
+				</button>
+			</div>
+			<textarea
+				className="input-text-area"
+				placeholder="Hello There!"
+				value={value}
+				onChange={handleChange}
+			/>
+		</div>
 	);
 };
 

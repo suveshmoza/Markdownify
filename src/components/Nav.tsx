@@ -9,7 +9,7 @@ const Nav = () => {
 				>
 					<i
 						className="fa-brands fa-github fa-2xl"
-						style={{ color: '#000000' }}
+						style={{ color: '#fff' }}
 					></i>
 				</a>
 			</div>

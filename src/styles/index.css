@@ -1,51 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
+/* Global styles */
 * {
 	padding: 0;
 	margin: 0;
 }
 
-.container {
-	padding: 5px;
-}
-
 .row {
 	width: 100%;
-	height: 91vh;
+	height: 90vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 8px;
-}
-.input-text-area {
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	box-sizing: border-box; /* Ensure that padding and borders don't affect the overall size */
-	resize: none;
-	padding: 10px;
 }
 
-.output-area {
-	border: 1px solid black;
-	padding: 10px;
-	min-width: 90%;
-	border-radius: 10px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	list-style-position: inside;
+/* Navbar */
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px;
+	background-color: #f2f2f2;
 }
 
+.navbar-button {
+	margin-left: 8px;
+	padding: 8px 14px;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #156dfc;
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.navbar-button:hover {
+	background-color: #1975ff;
+}
+
+/* Global Navbar */
 .markdown-nav {
 	height: 40px;
+	background-color: black;
+	color: white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2px 20px;
+	padding: 3px 20px;
 }
 
 .markdown-nav-logo {
 	font-size: 2rem;
 	font-family: 'Dancing Script', cursive;
+	cursor: pointer;
 }
 
 .markdown-nav-links {
@@ -54,4 +60,70 @@
 	font-weight: normal;
 	align-items: center;
 	padding-top: 5px;
+}
+
+/* Input area */
+.input-area-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.input-text-area {
+	font-size: 1.1rem;
+	line-height: 1.15;
+	padding: 10px;
+	border: 0.5px solid #ccc;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	resize: vertical;
+	min-width: 90%;
+	height: 97%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.2s ease-in-out;
+	word-break: break-all; /* Fix line break issue */
+	list-style-position: inside;
+}
+
+.input-text-area:focus {
+	outline: none;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-color: #4285f4;
+}
+
+.input-text-area:hover {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-text-area::placeholder {
+	color: #999;
+}
+
+.input-text-area::-webkit-resizer {
+	display: none;
+}
+
+/* Output area */
+.output-area-container {
+	display: flex;
+	flex-direction: column;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	height: 100%;
+}
+
+.output-area {
+	font-size: 1.1rem;
+	line-height: 1.15;
+	padding: 10px;
+	border: 0.5px solid #ccc;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	resize: vertical;
+	min-width: 90%;
+	height: 97%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.2s ease-in-out;
+	word-break: break-all; /* Fix line break issue */
+	list-style-position: inside;
 }
