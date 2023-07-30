@@ -1,16 +1,14 @@
 const Nav = () => {
 	return (
 		<nav className="markdown-nav">
-			<a className="markdown-nav-logo">Markdownify</a>
+			<p className="markdown-nav-logo">Markdownify</p>
 			<div className="markdown-nav-links">
 				<a
-					target="__blank"
+					target="_blank"
+					rel="noopener noreferrer"
 					href="https://github.com/suveshmoza/markdown-editor"
 				>
-					<i
-						className="fa-brands fa-github fa-2xl"
-						style={{ color: '#fff' }}
-					></i>
+					<i className="fa-brands fa-github fa-2xl github-icon"></i>
 				</a>
 			</div>
 		</nav>

@@ -1,15 +1,18 @@
-import { RootState } from '../store';
-import { useSelector, useDispatch } from 'react-redux';
-import { updateValue } from '../features/markdown/markdownSlice';
 import { ChangeEvent, useCallback } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../store';
+import { updateValue } from '../features/markdown/markdownSlice';
 
 const InputArea = () => {
 	const value = useSelector((state: RootState) => state.markdown.value);
 	const dispatch = useDispatch();
 
-	const handleChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-		dispatch(updateValue(e.target.value));
-	};
+	const handleChange = useCallback(
+		(e: ChangeEvent<HTMLTextAreaElement>) => {
+			dispatch(updateValue(e.target.value));
+		},
+		[dispatch]
+	);
 
 	const handleDownload = useCallback(() => {
 		const content = value;
