@@ -9,7 +9,8 @@ const OutputArea = () => {
 	return (
 		<div className="output-area-container">
 			<div className="navbar">
-				<button className="navbar-button">
+				<p className="navbar-text">Preview</p>
+				<button className="navbar-button-pdf">
 					Download <i className="fa-solid fa-file-pdf fa-xl"></i>
 				</button>
 			</div>
