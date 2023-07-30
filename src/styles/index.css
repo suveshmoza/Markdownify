@@ -33,7 +33,7 @@
 
 .navbar-button-md {
 	margin-left: 8px;
-	padding: 8px 14px;
+	padding: 6px 14px;
 	font-size: 14px;
 	font-weight: bold;
 	background-color: #156dfc;
@@ -43,19 +43,7 @@
 	cursor: pointer;
 }
 
-.navbar-button-pdf {
-	margin-left: 8px;
-	padding: 8px 14px;
-	font-size: 14px;
-	font-weight: bold;
-	background-color: #fc1515;
-	color: #fff;
-	border: none;
-	border-radius: 20px;
-	cursor: pointer;
-}
-
-.navbar-button:hover {
+.navbar-button-md:hover {
 	background-color: #1975ff;
 }
 
@@ -136,7 +124,7 @@
 
 .output-area {
 	font-size: 1.1rem;
-	line-height: 1.15;
+	line-height: 1.5;
 	padding: 10px;
 	border: 0.5px solid #ccc;
 	border-bottom-left-radius: 10px;

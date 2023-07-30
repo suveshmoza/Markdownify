@@ -13,6 +13,10 @@ const InputArea = () => {
 
 	const handleDownload = useCallback(() => {
 		const content = value;
+		if (content.length === 0) {
+			alert('Editor is empty!!');
+			return;
+		}
 		const blob = new Blob([content], { type: 'text/plain' });
 		const downloadLink = document.createElement('a');
 		downloadLink.href = URL.createObjectURL(blob);
