@@ -2,9 +2,11 @@ const Nav = () => {
 	return (
 		<nav className="markdown-nav">
 			<h1>
-				<span className="magic"><span className="magic-text">Markdownify</span></span>
+				<span className="magic">
+					<span className="magic-text">Markdownify</span>
+				</span>
 			</h1>
-			
+
 			<div className="markdown-nav-links">
 				<a
 					target="_blank"

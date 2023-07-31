@@ -11,7 +11,7 @@ const InputArea = () => {
 		(e: ChangeEvent<HTMLTextAreaElement>) => {
 			dispatch(updateValue(e.target.value));
 		},
-		[dispatch]
+		[dispatch],
 	);
 
 	const handleDownload = useCallback(() => {
