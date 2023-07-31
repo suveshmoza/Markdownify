@@ -1,7 +1,10 @@
 const Nav = () => {
 	return (
 		<nav className="markdown-nav">
-			<p className="markdown-nav-logo">Markdownify</p>
+			<h1>
+				<span className="magic"><span className="magic-text">Markdownify</span></span>
+			</h1>
+			
 			<div className="markdown-nav-links">
 				<a
 					target="_blank"
