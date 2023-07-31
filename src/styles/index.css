@@ -192,6 +192,7 @@ textarea::-webkit-scrollbar-thumb {
     --purple: rgb(123, 31, 162);
     --violet: rgb(103, 58, 183);
     --pink: rgb(244, 143, 177);
+    --light-grey: rgb(227, 227, 227);
 
     /* --red: #F31559;
     --magenta: #FF52A2;
