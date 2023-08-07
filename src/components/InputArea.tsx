@@ -31,15 +31,18 @@ const InputArea = () => {
 	}, [value]);
 
 	return (
-		<div className="input-area-container">
-			<div className="navbar">
-				<p className="navbar-text">Editor</p>
-				<button className="navbar-button-md" onClick={handleDownload}>
+		<div className="flex flex-col h-full bg-gray-200">
+			<div className="flex justify-between items-center p-2 ">
+				<p className="text-gray-500">Editor</p>
+				<button
+					className="px-4 py-1 border border-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-colors ease-out duration-200"
+					onClick={handleDownload}
+				>
 					Download <i className="fa-brands fa-markdown fa-xl"></i>
 				</button>
 			</div>
 			<textarea
-				className="input-text-area"
+				className="flex-1 p-2 border-2 rounded-md resize-none w-full overflow-wrap break-word shadow-md"
 				placeholder="Hello There!"
 				value={value}
 				onChange={handleChange}

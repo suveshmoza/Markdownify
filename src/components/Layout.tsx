@@ -6,15 +6,17 @@ const LazyOutputArea = lazy(() => import('./OutputArea'));
 
 const Layout = () => {
 	return (
-		<div className="container">
-			<div className="row">
-				<Suspense fallback={<Loading />}>
+		<div className="grid grid-cols-2 h-screen">
+			<Suspense fallback={<Loading />}>
+				<div className="h-full overflow-y-auto">
 					<LazyInputArea />
-				</Suspense>
-				<Suspense fallback={<Loading />}>
+				</div>
+			</Suspense>
+			<Suspense fallback={<Loading />}>
+				<div className="h-full overflow-y-auto">
 					<LazyOutputArea />
-				</Suspense>
-			</div>
+				</div>
+			</Suspense>
 		</div>
 	);
 };
